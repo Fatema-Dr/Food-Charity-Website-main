@@ -1,0 +1,13 @@
+
+            <script>
+
+            const firstname = document.getElementById("fname");
+                
+                function validateForm()
+                {
+                    if(firstname.value == ""){
+                        document.getElementById("error1").innerHTML ="*First Name Required"; 
+                    }
+                    return false;
+                }
+            </script>
