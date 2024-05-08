@@ -25,43 +25,27 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
-<!--link to menu icon-->
+<!--link to icon-->
 <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-
-
-
-<!--<script type="text/javascript">
- const cookieBox =document.querySelector(".wrapper"),
-    buttons = document.querySelectorAll(".button");
-
-    const executeCodes = () => {
-        cookieBox.classList.add("show");
-
-    buttons.forEach(button) => {
-        button.addEventListener("click", () =>{
-            cookieBox.classlist.remove("show");
-    });
-    });
-};
-
-window.addEventListener("load", executeCodes);
-</script>--->
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 </head> 
 
-<body onLoad="welcomeMsg()"> 
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+<body> 
 <section class="header"> 
+    <!-- <div class="logo">
+        <a href="index.html" class="logo"><img src="logo2.png" alt="Foundation-Logo"></a> 
+     
+       </div>  -->
 <nav> 
-    
-    <a href="index.html" class="logo"><img src="images/newLogo.jpg" alt="Foundation-Logo"></a>
-   
-
-<!-- <div class="nav">
-<i class='bx bx-menu' id="menu-icon" ></i>
-<i class='bx bx-x'></i>
-</div> -->
-
+    <div class="logo">
+     <a href="index.html" class="logo"><img src="/fuckedupimage.png "></a>
+    </div> 
 <div class="nav-links"> 
     
 <ul> 
@@ -76,7 +60,7 @@ window.addEventListener("load", executeCodes);
         </ul>
     </div>
 </li> 
-<li> <a href=" " > WHO WE HELP</a></li> 
+<li> <a href="our_campaigns.html" >OUR CAMPAIGNS</a></li> 
 <li> <a href="get-involved.html"> GET INVOLVED </a>
     <div class="sub-menu-1">
         <ul>
@@ -92,15 +76,8 @@ window.addEventListener("load", executeCodes);
 </div> 
 </nav>
 
-<!-- <div>
-    <div class="search" id="searchinput">
-        <input type="search" placeholder="search">
-        <i class='bx bx-search-alt-2'></i>
-    </div></div>-->
-    <a href="donate.html" class="btn" style="position: absolute; top:5%; right:5%; cursor: pointer;">
+    <a href="donate.html" class="btn" style="position: absolute; top:9%; right:6%; cursor: pointer;">
         Donate Now <i class='bx bx-donate-heart'></i></a>
-
-
 
 </section>
 
@@ -134,14 +111,12 @@ window.addEventListener("load", executeCodes);
     </div>
 
      <div class="home-div-1-container">
-      
-        
+    
           <span> Millions of people across the globe face hunger  <br>     
           while a large amount of food is wasted.   <br>
          
           Doctor's Foundation - The Feeding Nest is key to the solution.<br>
           </span>
-      
      </section>
 
 
@@ -149,24 +124,12 @@ window.addEventListener("load", executeCodes);
 <section class="about" id="about">
 
     <div class="about-left-side"> 
-        <table>
-        <tr>
-            <td> <img src="images/about_img_cropped_via_10015_io.png" class="about-img1"> </td>
-            <td> <img src="images/about_img_cropped_via_10015_io.png" class="about-img2"> </td>
-        </tr>
-        <tr>
-            <td>
-                <img src="images/about_img_cropped_via_10015_io.png" class="about-img3">
-            </td>
-            <td>
-                <img src="images/about_img_cropped_via_10015_io.png" class="about-img4">
-            </td>
-        </tr>
-        <!--<img src="images/about_img_cropped_via_10015_io.png" class="about-img1">
-        <img src="images/about_img_cropped_via_10015_io.png" class="about-img2"><br>
-        <img src="images/about_img_cropped_via_10015_io.png" class="about-img3">
-        <img src="images/about_img_cropped_via_10015_io.png" class="about-img4"> -->
-        </table> 
+        <img src="images/about_img_cropped_via_10015_io.png" class="about-img1">
+         <img src="images/about_img_cropped_via_10015_io.png" class="about-img2">
+        
+         <img src="images/about_img_cropped_via_10015_io.png" class="about-img3">
+        <img src="images/about_img_cropped_via_10015_io.png" class="about-img4">
+            
      </div>
 
     <div class="about-right-side">
@@ -178,24 +141,22 @@ window.addEventListener("load", executeCodes);
         <div class="flex counter">
             <div class="flex">
                 <span></span>
-                <h2 class="counter-value" data target="5"> 0 </h2>
+                <h2 class="counter-value">10</h2>
                 <h4> Years Of Experience </h4>
             </div>
         
             <div class="flex">
                 <span></span>
-                <h2 class="counter-value" data target="5"> 0 </h2>
-                <h4> Years Of Experience </h4>
+                <h2 class="counter-value">100K</h2>
+                <h4>People helped</h4>
             </div>
         </div>
 
         <a href="about_us.html" class="btn"> Read More </a>
     </div>
-    
 </section>
 
 <!---Support Us Section -->
-
 
     <section class="support" id="support">
     <h1> How to support us? </h1>
@@ -223,21 +184,22 @@ window.addEventListener("load", executeCodes);
 
 
 <!------Reviews Section -->
-
- <section class="review-sec">
+<div class="review_container">
+ <section class="review-sec test">
+ 
     <div class="review-title">
         <h2> What People Say about Us? </h2>
     </div>
      <div class="swiper mySwiper">
   <div class="swiper-wrapper">
-    <div class="swiper-slide">
-        <div class="single-review">
+    <div class="swiper-slide ">
+        <div class="single-review" >
             <i class='bx bxs-star' ></i>
             <i class='bx bxs-star' ></i>
             <i class='bx bxs-star' ></i>
             <i class='bx bxs-star' ></i>
             <i class='bx bxs-star-half' ></i>
-         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+         <p style="margin:2% 12%;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
          <div class="people-info">
             <div class="people-pic">
                 <a href="#"><img src="Test.png"> </a> </div>
@@ -252,7 +214,7 @@ window.addEventListener("load", executeCodes);
             <i class='bx bxs-star' ></i>
             <i class='bx bxs-star' ></i>
             <i class='bx bxs-star-half' ></i>
-         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+         <p style="margin:2% 12%;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
          <div class="people-info">
             <div class="people-pic">
                 <a href="#"><img src="Test.png"> </a> </div>
@@ -267,7 +229,7 @@ window.addEventListener("load", executeCodes);
             <i class='bx bxs-star' ></i>
             <i class='bx bxs-star' ></i>
             <i class='bx bxs-star-half' ></i>
-         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+         <p style="margin:2% 12%;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
          <div class="people-info">
             <div class="people-pic">
                 <a href="#"><img src="Test.png"> </a> </div>
@@ -282,7 +244,7 @@ window.addEventListener("load", executeCodes);
             <i class='bx bxs-star' ></i>
             <i class='bx bxs-star' ></i>
             <i class='bx bxs-star-half' ></i>
-         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+         <p style="margin:2% 12%;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
          <div class="people-info">
             <div class="people-pic">
                 <a href="#"><img src="Test.png"> </a> </div>
@@ -297,7 +259,7 @@ window.addEventListener("load", executeCodes);
   <div class="swiper-pagination"></div>
 </div>
 </section>
-
+</div>
 
 <!-- Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -319,12 +281,12 @@ window.addEventListener("load", executeCodes);
 </script>
         
 
-<!---Footer -->
- <footer>
+<!--Footer-->
+  <!-- <footer>
     <div class="footer">
         <div class="row-5">
             <div class="col-5">  
-                <a href=""> <img src="images/Logo.jpg" alt="Doctor's Foundation- The Feeding Nest Logo"> </a>
+                <a href=""> <img src="images/Logo_nobg.png" alt="Doctor's Foundation- The Feeding Nest Logo"> </a>
             </div> 
         </div>
         <div class="row-5">
@@ -354,21 +316,51 @@ window.addEventListener("load", executeCodes);
             </div>
          </div>
        </div>
-</footer> 
+</footer> -->
 
+<!--New Footer-->
+<footer>
+<table class="content-table">
+    
+    <tr> 
+        <td><b>Quick Links </b></td>
+        <td><b>Extra Links</b> </td>
+        <td><b>Contact info</b> </td>
+        <td><b>Social Media</b> </td>
+    </tr>
+   
+    <tbody>
+    <tr>
+        <td><a href="index.html"><i class='bx bx-chevron-right' style='color:#212123'>Home </i></a>
+            </td>
+        <td><a href="about_us.html"><i class='bx bx-chevron-right' style='color:#212123'>About Us</i> </a></td>
+        <td>+44 XXXX XXXX XXX</td>
+        <td><a href="https://www.facebook.com"> <i class='bx bxl-facebook-circle' style='color:#212123'>Facebook </i></a></td>
+    </tr>
 
+    <tr>
+        <td style="width:23vw;"><a href="our_campaigns.html"><i class='bx bx-chevron-right' style='color:#212123;'>Our Campaigns</i></a>  </td>
+        <td><a href="help.html"><i class='bx bx-chevron-right' style='color:#212123'>Need Help? </i></a></td>
+        <td style="width:30vw;"><a>contact@doctorsfoundation.co.uk </a></td>
+        <td><a href="https://www.linkedin.com"><i class='bx bxl-linkedin-square' style='color:#212123' >LinkedIn </i></a></td>
+    </tr>
 
+    <tr>
+        <td><a href="get-involved.html"><i class='bx bx-chevron-right' style='color:#212123'>Get Involved </i></a></td>
+        <td><a href="privacy_policy.html "><i class='bx bx-chevron-right' style='color:#212123'>Privacy Policy</i></a></td>
+        <td> 4-6 University Way, E16 2RD</td>
+        <td><a href="https://www.instagram.com/"><i class='bx bxl-instagram' style='color:#212123'>Instagram</i></a></td>
+    </tr>
 
-<!---
-<div class="wrapper" >
-<p> We use cookies on this site to enhance your experience. <br>
-    By clicking the Accept button, you agree to us doing so. <a href="cookie_policy.html"> Learn More </a>
-</p>
-<div class="buttons">
-    <button class="button"> Accept </button>
-    <button class="button"> Decline</button>
-</div>
-</div>-->
+    <tr>
+        <td><a href="donate.html"><i class='bx bx-chevron-right' style='color:#212123'>Donate </i></a></td>
+        <td style="width:23vw;"><a href="terms-conditions.html"><i class='bx bx-chevron-right' style='color:#212123'>Terms & Conditions</i></a></td>
+        <td>London, UK</td>
+        <td><a href="https://www.youtube.com"><i class='bx bxl-youtube' style='color:#212123'>Youtube</i></a></td>
+    </tr>
 
+    </tbody>
+</table>
+</footer>
 </body> 
 </html> 

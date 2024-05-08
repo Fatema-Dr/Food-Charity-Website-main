@@ -6,8 +6,11 @@
         <!--link to css file-->
      <link rel="stylesheet" href="style.css" type="text/css">
 
+     <!--link to icon-->
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
        <style>
-           .get-involved-container{
+        .get-involved-container{
             background-image:url('images/about_img.jpg');
             background-size:cover; 
             background-position:center; 
@@ -98,10 +101,12 @@
             cursor:pointer;
         }
 
-        .card:hover{
-            background-color:#16b9788a;
-            transition: 0.4s ease;
-        }
+        /* .card:hover{
+            /* background-color:#16b9788a;
+            transition: 0.4s ease; */
+            transform:rotate(13deg);
+            background-color:rgb(0.184,148);
+        } */
         
         .card .icon i{
             font-size:35px;
@@ -122,71 +127,57 @@
 
         }
 
-        .blog{
-            padding:60px;
-            background:#12b7c0;
+        section .cta{
+            padding:80px;
         }
 
-        .blog .section-title{margin-bottom:30px;}
-
-        .article-card-group{
-            display:grid;
-            grid-template-columns:1fr;
-            gap:30px;
+        .partner-container{
+            display:flex;
+            justify-content:center;
         }
 
-        .article-card{
-            border-radius:5px;
-            background:#fff;
-            overflow:hidden;
+        .cta-content{
+            background-color: #16b978;
+            text-align:center;
+            padding:50px;
+            /* margin-block-end: 30px; */
         }
 
-        .article-card .card-head{height:20px;}
-
-        .article-card .card-img{
-            
-            object-fit:cover;
+        .cta .section-title{
+            color:#fff;
+            font-size:2.5rem;
+            font-weight:600px;
+            line-height:1.2;
+            margin-block-end:25px;
         }
 
-        .article-card .card-body{ padding:20px; }
-
-        .article-card .article-author{
-            font-size:10px;
-            color:#16b978;
-            margin-bottom:10px;
+        .partner-btn{
+        padding:10px 20px;
+        border: 2px solid #fff;
+        border-radius: 40px;
+        color:#16b978;
+        background-color:#fff;
+        font-weight: 500; 
         }
 
-        .article-card .card-title{
-            font-size:16px;
-            font-weight:400;
-            color:#12b7c0;
-            margin-bottom:10px;
-            transition:0.25 ease;
+        .partner-btn:hover{
+            letter-spacing:2px;
+            color:#fff;
+            background:#16b978;
         }
 
-        .article-card .card-title:hover{ color:#16b978; }
+        /* .cta .btn-outline{ margin-inline:auto;} */
 
-        .article-card .card-text{
-            font-size:13px;
-            color:#12b7c0;
-            line-height:1.5;
-        }
-
+        /* .cta-banner{ background-color;} */
        </style>
        </head>
 
        <body>
         <section class="header"> 
             <nav> 
-                
-                <a href="index.html" class="logo"><img src="images/newLogo.jpg" alt="Foundation-Logo"></a>
-               
-            
-            <!-- <div class="nav">
-            <i class='bx bx-menu' id="menu-icon" ></i>
-            <i class='bx bx-x'></i>
-            </div> -->
-            
+                <div class="logo">
+                <a href="index.html" class="logo"><img src="images/Logo_nobg.png" alt="Foundation-Logo"></a>
+                </div>
             <div class="nav-links"> 
                 
             <ul> 
@@ -201,7 +192,7 @@
                     </ul>
                 </div>
             </li> 
-            <li> <a href=" " > WHO WE HELP</a></li> 
+            <li> <a href="our_campaigns.html" >OUR CAMPAIGNS</a></li> 
             <li> <a href="get-involved.html"> GET INVOLVED </a>
                 <div class="sub-menu-1">
                     <ul>
@@ -217,15 +208,8 @@
             </div> 
             </nav>
             
-            <!-- <div>
-                <div class="search" id="searchinput">
-                    <input type="search" placeholder="search">
-                    <i class='bx bx-search-alt-2'></i>
-                </div></div>-->
-                <a href="donate.html" class="btn" style="position: absolute; top:5%; right:5%; cursor: pointer;">
+                <a href="donate.html" class="btn" style="position: absolute; top:8%; right:6%; cursor: pointer;">
                     Donate Now <i class='bx bx-donate-heart'></i></a>
-            
-            
             
             </section>
     
@@ -266,8 +250,7 @@
                         </div>
                         <h2> Fundraise </h2>
                         <p> By fundraising for Doctor's Foundation, you join the amazing Team. Without incredible
-                             fundraisers like you, we wouldn't be able to help food banks, support their communities or 
-                             campaign for change to end the need for food banks in the UK.</p>
+                             fundraisers like you, we wouldn't be able to help people in need to end the needof food banks in UK.</p>
                     </div>
         
                     <div class="card">
@@ -275,19 +258,75 @@
                            
                         </div>
                         <h2> Volunteer with us </h2>
-                        <p> You'll be part of a dynamic team supporting our vision.
-                         Every year, more than 1000 volunteers give their time and compassion to support 
-                         Doctor's Foundation. Without these incredible volunteers,the many people facing hardship
-                         wouldn't get the support they need. </p>
+                        <p> You'll be part of a dynamic team supporting our vision. Volunteers give their time and compassion to support 
+                         Doctor's Foundation. Without them, many people facing hardship wouldn't get the support they need. </p>
                     </div>
                 </div>
-        
-                
-                   
                 </div>
             </section>
-    
-    
+            
+            <section class="section cta">
+                <div class="partner-container">
+
+                    <div class="cta-content">
+                        <h2 class="h2 section-title"> 50+ Trusted Global Partners</h2>
+
+                        <button class="partner-btn">
+                            <span>Become a Partner</span>
+                            
+                        </button>
+                    </div>
+
+                    <figure class="cta-banner">
+                        <img src="images/donate.png" width="520" height="228" class="img-cover">
+                    </figure>
+                </div>
+            </section>
+
+            
+            <footer>
+                <table class="content-table">
+                    
+                    <tr> 
+                        <td><b>Quick Links </b></td>
+                        <td><b>Extra Links</b> </td>
+                        <td><b>Contact info</b> </td>
+                        <td><b>Social Media</b> </td>
+                    </tr>
+                   
+                    <tbody>
+                    <tr>
+                        <td><i class='bx bx-chevron-right' style='color:#212123'>Home</i>
+                            </td>
+                        <td><i class='bx bx-chevron-right' style='color:#212123'>About Us</i></td>
+                        <td>+44 XXXX XXXX XXX</td>
+                        <td><i class='bx bxl-facebook-circle'>Facebook</i></td>
+                    </tr>
+                
+                    <tr>
+                        <td> <i class='bx bx-chevron-right' style='color:#212123'>Our Campaigns</i></td>
+                        <td> <i class='bx bx-chevron-right' style='color:#212123'>Need Help?</i></td>
+                        <td> contact@doctorsfoundation.co.uk</td>
+                        <td> <i class='bx bxl-linkedin-square'>LinkedIn</i></td>
+                    </tr>
+                
+                    <tr>
+                        <td> <i class='bx bx-chevron-right' style='color:#212123'>Get Involved</i></td>
+                        <td> <i class='bx bx-chevron-right' style='color:#212123'>Privacy Policy</i></td>
+                        <td> 4-6 University Way, E16 2RD</td>
+                        <td><i class='bx bxl-instagram'>Instagram</i></td>
+                    </tr>
+                
+                    <tr>
+                        <td><i class='bx bx-chevron-right' style='color:#212123'>Donate</i></td>
+                        <td><i class='bx bx-chevron-right' style='color:#212123'>Terms & Conditions</i></td>
+                        <td>London, UK</td>
+                        <td><i class='bx bxl-youtube'>Youtube</i></td>
+                    </tr>
+                
+                    </tbody>
+                </table>
+                </footer>
       
     </body>        
 </html>

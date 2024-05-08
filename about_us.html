@@ -18,14 +18,14 @@
         width:100%;
         display:flex;
         align-items:center;
-        margin:0 10px 0 10px;
+        margin:0 0 0 10px;
         padding:10px;
         /* padding-top:5%;  */
     }
 
     .about-content{
         margin-top:5%;
-        margin-left:5%;
+        margin-left:3%;
         flex:1.5;
     }
 
@@ -46,74 +46,145 @@
     }
     
     .about-img{
-        padding-left:20px; 
-        flex:1 1 17rem; 
-   } 
-    
-/*
-    .about-content{
-        flex:1.5 1 17rem;
-    }
+        padding-left:20px;
+        flex:1 1 17rem;
+    } 
 
-    .about-content h1{
-        padding:5%;
-    }
+   .what{
+            width:100%;
+            /* height:280vh; */
+            background-color:;
+            /* padding-top:10%; */
+            /* padding-left:10%; */
+        }
+        .what h1{
+            margin-left:3%;
+        }
+        .cards{
+            margin:3%;
+            /* margin-right:5%; */
+            display:flex;
+        }
 
-   .about-img{
-        padding-left:20px; 
-        flex:1 1 17rem; 
-   }
+        .box{
+            padding:50px 40px;
+            background-color:#16b978;
+            color:#fff;
+        }
 
-    .about p{
-        margin:0.5rem 0 1.4rem 0;
-        font-size:20px;
-        align-items:center;
-        padding:3%;
-    
-    }*/
+        .box h2{
+            font-size:32px;
+            padding-bottom:30px;
+        }
 
-   
+        .box h5{
+            font-size:16px;
+            padding-bottom:40px;
+            font-weight:bolder;
+        }
 
-     .mission{
-      padding: 2rem;
-     }
-    
-     .mission- container {
-    width: 100%;
-    max-width: 1600px;
-    padding: 0 5vw;
-    margin: 0 auto;
-    }
-    
-    .mission-container h3{
-    font: 1.7rem / 1.2 "GalanoGrotesque", sans-serif;
-    font-weight: 500;
-    margin: 2rem 0 1rem;
-    color:#16b978;
-    }
+        .boxa{
+            background-color:rgba(22, 185, 120,0.534);
+            border-top-left-radius:15px;
+            border-bottom-left-radius: 15px;
+        }
 
-    .mission-container div{   
-    font: 700 2.22rem / 1.125 "GalanoGrotesque", sans-serif;
-    text-transform: uppercase;
-    }
+        .boxb{
+            background-color:rgba(22, 185, 120, 0.644);
+        }
 
+        .boxc{
+            background-color:rgba(22, 185, 120, 0.76);
+        }
 
-    .mission-statement{
-    max-width: 550px;
-    font: 500 1.33rem / 1.33 "GalanoGrotesque", sans-serif;
-     }
-/*
-     mission{
-    position: relative;
-    max-width: 100%;
-    overflow-x: hidden;
-    overflow-x: clip;
-    overflow-y: visible;
-    }*/
+        .boxd{
+            background-color:rgba(22, 185, 120, 0.842);
+            border-top-right-radius:15px;
+            border-bottom-right-radius: 15px;
+        }
 
-    .row{
+    /* .about-section-1{ padding:50px;} */
+
+    .about-container{
         display:flex;
-        flex-direction:column;
+        align-items:center;
+    }
+    .about-banner{
+        display:flex;
+        position:relative;
+        max-width:max-content;
+        margin-left:10px;
+        margin-block-end:30px;
+    }
+
+    .deco-title{
+        font-size:5rem;
+        font-weight: 700px;
+        white-space: nowrap;
+        line-height:0.5;
+        color:transparent;
+        -webkit-text-fill-color:transparent;
+        -webkit-text-stroke: 2px #000;
+        transform-origin: top left;
+        transform:rotate(0.25turn);
+        position: absolute;
+        top:55%;
+        left:95%;
+        z-index:-1;
+    }
+
+    .about-img-1{
+        max-width:max-content;
+        margin-block-start:30px;
+    }
+
+    .about-content-1{
+       padding-left: 50px;
+    }
+    .about .section-subtitle{
+        margin-block-end:10px;
+    }
+
+    .tab-nav{
+        display:flex;
+        flex-wrap:wrap;
+        gap:15px;
+        margin-block:25px 36px;
+    }
+
+    .tab-btn{
+        background-color:#caefc3;
+        color:#212123;
+        font-size:18px;
+        font-weight:500px;
+        padding:10px 32px;
+        cursor:pointer;
+    }
+
+    .tab-btn.active{
+        background-color:#16b978;
+        color:#fff;
+    }
+
+    .section-text{line-height:2;}
+
+    .tab-list{margin-block:25px 50px;}
+
+    .tab-item{
+        display:flex;
+        align-items:center;
+        gap:10px;
+        padding-block:5px;
+    }
+
+    .tab-item{
+        font-size:2rem;
+        color:#16b978;
+    }
+
+    .tab-text{
+        font-size:8px;
+        font-weight: 500px;
     }
  </style>
     </head>
@@ -160,10 +231,13 @@
             </section>
         <section class="about">
             <div class="about-content">
-            <h1> What we do? </h1>
-            <p> Currently, millions of people in UK are experiencing Food Insecurity. 
-                With an aim that nobody is forced to skip meals, Doctor's Foundation colects 
-                food available for donation and give it to charitable organizations so that they provide it to those who need.   </p>
+            <h1> Who we Are? </h1>
+            <p> We rescue good, surplus food from the food industry that cannot be sold and would otherwise
+                go to waste. This is high-quality and nutritious, including a high proportion of fresh fruit 
+                and vegetables, baked goods,and salada. We then sort and
+                deliver this food to almost 100 front-line charities, primary schools and individuals in London. 
+                That way, food that would have gone to waste is reaching homeless people and
+                those who simply cannot afford to buy regular, healthy food.  </p>
             
             </div>
         
@@ -172,19 +246,219 @@
             </div>
         </section>
 
-        <section class="mission" id="mission">
-            <div class="mission-container">
-                <h3> Our
-                    <div> Community Led Approach </div>
-                </h3> 
-            </div>
+        <section class="what" id="what">
+            <h1> What we do?</h1>
 
-            <div class="mission-statement">
-                <span> Our Mission is simple: </span>
-                hdkehkfekfnnfe dbkwhdkwhd bcwkhdwdl dkwndkw 
-            </div>   
+            <div class="cards">
+                <div class="box boxa">
+                    <h2> We Find & Fund</h2>
+                    <h5>
+                        We are in search of opportunities to help as many people as possible.
+                        We approach and fund all those who are in need. 
+                    </h5>
+                    <hr>
+                </div>
+        
+                <div class="box boxb">
+                    <h2> We Provide Care</h2>
+                    <h5>
+                        We are in search of opportunities to help as many people as possible.
+                        We approach and fund all those who are in need. 
+                    </h5>
+                    <hr>
+                </div>
+            
+                <div class="box boxc">
+                    <h2> We Educate </h2>
+                    <h5>
+                       We are in search of opportunities to help as many people as possible. We approach and fund all those who are in need.
+                    </h5>
+                    <hr>
+                </div>
+            
+                <div class="box boxd">
+                    <h2> We Employ</h2>
+                    <h5>
+                        We are in search of opportunities to help as many people as possible.
+                        We approach and fund all those who are in need. 
+                    </h5>
+                    <hr>
+                </div>
+            </div>
+            </section>
+        <!--about-container-->
+        <section class="about-section-1" id="about">
+            <div class="about-container">
+                <div class="about-banner">
+                    <h2 class="deco-title">About Us</h2>
+
+                    <div class="banner-row">
+                        <div class="banner-col">
+                            <img src="images/about_img.jpg" height="330" width="315" class="about-img-1">
+                            <img src="images/about_img.jpg" width="386" height="250" class="about-img-1">
+                        </div>
+
+                        <div class="banner-col">
+                            <img src="images/about_img.jpg" width="250" height="277" class="about-img-1">
+                            <img src="images/about_img.jpg" width="315" height="330" class="about-img-1">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-content-1">
+
+                    <p class="section-subtitle">
+
+                        <span>Why Choose Us</span>
+                    </p>
+
+                    <h2>
+                        Raise your hand to save people from hunger
+                    </h2>
+
+                    <ul class="tab-nav" type="none">
+
+                        <li>
+                            <button class="tab-btn" onclick="about-js1()">Our Mission</button>
+                        </li>
+                        <li>
+                            <button class="tab-btn">Our Vision</button>
+                        </li>
+                        <li>
+                            <button class="tab-btn">Our Impact</button>
+                        </li>
+                    </ul>
+                    
+                    <div class="tab-content" id="tab-content-1">
+
+                        <p class="section-text">dujfvjkvm</p>
+                        <ul class="tab-list">
+                            
+                            <li class="tab-item">
+                                <ul>
+                                    <li> 1</li>
+                                </ul>
+                                <p class="tab-text">duyjfjj</p>
+                            </li>
+                            <li class="tab-item">
+                                <ul>
+                                    <li> </li>
+                                </ul>
+                                <p class="tab-text">duyjfjj</p>
+                            </li>
+                            <li class="tab-item">
+                                <ul>
+                                    <li> </li>
+                                </ul>
+                                <p class="tab-text">duyjfjj</p>
+                            </li> 
+                        </ul>
+                    </div>
+
+                    <div class="tab-content" id="tab-content-2">
+
+                        <p class="section-text">dujfvjkvm</p>
+                        <ul class="tab-list">
+                            
+                            <li class="tab-item">
+                                <ul>
+                                    <li>2</li>
+                                </ul>
+                                <p class="tab-text">duyjfjj</p>
+                            </li>
+                            <li class="tab-item">
+                                <ul>
+                                    <li> </li>
+                                </ul>
+                                <p class="tab-text">duyjfjj</p>
+                            </li>
+                            <li class="tab-item">
+                                <ul>
+                                    <li> </li>
+                                </ul>
+                                <p class="tab-text">duyjfjj</p>
+                            </li> 
+                        </ul>
+                    </div>
+
+                    <div class="tab-content" id="tab-content-3">
+
+                        <p class="section-text">dujfvjkvm</p>
+                        <ul class="tab-list">
+                            
+                            <li class="tab-item">
+                                <ul>
+                                    <li> 3 </li>
+                                </ul>
+                                <p class="tab-text">duyjfjj</p>
+                            </li>
+                            <li class="tab-item">
+                                <ul>
+                                    <li> </li>
+                                </ul>
+                                <p class="tab-text">duyjfjj</p>
+                            </li>
+                            <li class="tab-item">
+                                <ul>
+                                    <li> </li>
+                                </ul>
+                                <p class="tab-text">duyjfjj</p>
+                            </li> 
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
         </section>
 
+        <script>
+            const faqs=document.querySelectorAll(".faq")
+
+            faqs.forEach((faq)=>{
+                faq.addEventListener("click",()=>{
+                    if(faq.classList.contains("active")){
+                        faq.classList.remove("active")
+                    }else{
+                        faq.classList.add("active")
+                    }
+                })
+            })
+        </script>
+
+        <!-- <script>
+        
+        function about-js1(){
+        var x = document.getElementById("tab-content-1");
+        var y = document.getElementById("tab-content-2");
+        var z = document.getElementById("tab-content-3");
+
+        x.style.display="block";
+        y.style.display="none";
+        z.style.display="none";
+        }        
+
+        function about-js2(){
+        var x = document.getElementById("tab-content-1");
+        var y = document.getElementById("tab-content-2");
+        var z = document.getElementById("tab-content-3");
+
+        x.style.display="none";
+        y.style.display="block";
+        z.style.display="none";
+        }     
+
+        function about-js3(){
+        var x = document.getElementById("tab-content-1");
+        var y = document.getElementById("tab-content-2");
+        var z = document.getElementById("tab-content-3");
+
+        x.style.display="none";
+        y.style.display="none";
+        z.style.display="block";
+        }     
+        </script> -->
+
+        <!--footer-->
         <footer>
             <table class="content-table">
                 
