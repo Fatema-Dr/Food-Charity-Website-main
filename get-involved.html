@@ -96,7 +96,8 @@
             flex-direction:column;
             margin:0px 20px;
             padding: 20px 20px;
-            background-color:#16b978e1;
+            box-shadow: 0 8px 32px rgba(0,0,0, .37);
+            background-color:#caefc3;
             border-radius:10px;
             cursor:pointer;
         }
@@ -104,9 +105,9 @@
         /* .card:hover{
             /* background-color:#16b9788a;
             transition: 0.4s ease; */
-            transform:rotate(13deg);
+            /* transform:rotate(13deg);
             background-color:rgb(0.184,148);
-        } */
+        } */ */
         
         .card .icon i{
             font-size:35px;
@@ -115,8 +116,9 @@
 
         .card h2{
             font-size:28px;
-            color:#fff;
+            color:#000;
             margin-bottom:20px;
+            box-shadow: 0 8px 32px rgba(0,0,0, .37);
         }
 
         .card p{
@@ -137,6 +139,7 @@
         }
 
         .cta-content{
+            box-shadow: 0 8px 32px rgba(0,0,0, .37);
             background-color: #16b978;
             text-align:center;
             padding:50px;
@@ -149,6 +152,12 @@
             font-weight:600px;
             line-height:1.2;
             margin-block-end:25px;
+        }
+        .cta p{
+            color:#fff;
+            font-size:1.5rem;
+            padding-bottom:3%;
+            text-transform: uppercase;
         }
 
         .partner-btn{
@@ -168,7 +177,7 @@
 
         /* .cta .btn-outline{ margin-inline:auto;} */
 
-        /* .cta-banner{ background-color;} */
+        .cta-banner{box-shadow: 0 8px 32px rgba(0,0,0, .37);}
        </style>
        </head>
 
@@ -239,6 +248,7 @@
                            
                         </div>
                         <h2> Donate Food </h2>
+                        <img src="images/donate-food-icon.svg">
                         <p> More people than ever are being driven to food banks and the sharp increase in people needing 
                             help is outstripping food donations.Your donations are vital to ensure the Foundation can help those who need it. </p>
                     </div>
@@ -249,6 +259,7 @@
         
                         </div>
                         <h2> Fundraise </h2>
+                        <img src="images/fundraise-icon.svg">
                         <p> By fundraising for Doctor's Foundation, you join the amazing Team. Without incredible
                              fundraisers like you, we wouldn't be able to help people in need to end the needof food banks in UK.</p>
                     </div>
@@ -258,6 +269,7 @@
                            
                         </div>
                         <h2> Volunteer with us </h2>
+                        <img src="images/volunteer-icon.svg">
                         <p> You'll be part of a dynamic team supporting our vision. Volunteers give their time and compassion to support 
                          Doctor's Foundation. Without them, many people facing hardship wouldn't get the support they need. </p>
                     </div>
@@ -270,15 +282,15 @@
 
                     <div class="cta-content">
                         <h2 class="h2 section-title"> 50+ Trusted Global Partners</h2>
+                        <p> Join hands and save families.</p>
 
                         <button class="partner-btn">
                             <span>Become a Partner</span>
-                            
                         </button>
                     </div>
 
                     <figure class="cta-banner">
-                        <img src="images/donate.png" width="520" height="228" class="img-cover">
+                        <img src="images/partners.jpg" width="520" height="254" class="img-cover">
                     </figure>
                 </div>
             </section>
