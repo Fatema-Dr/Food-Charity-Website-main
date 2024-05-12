@@ -33,7 +33,7 @@ body{
 }
 .campaigns .box-container .box{
     border:1rem solid #000;
-    box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+    box-shadow:0.5rem 1rem rgba(0,0,0,.1);
     background:#fff;
     display: none;
 }
@@ -49,7 +49,7 @@ body{
 }
 
 .campaigns .box-container .box .image{
-    height:20rem;
+    height:18rem;
     overflow:hidden;
 }
 

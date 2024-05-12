@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
         <title> About Us - Doctor's Foundation</title>
         <link rel="icon" href="images/Logo.jpg" type="image/x-icon">
@@ -6,7 +7,11 @@
         <!--link to css file-->
         <link rel="stylesheet" href="style.css" type="text/css">
 
+        <!--charcater encoding-->
+        <meta charset="utf-8">
 
+
+        <!--link to icons-->
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
      <style>
 
@@ -61,7 +66,6 @@
      /* padding-left:10%; */
         }
         .what h1{
-            text-shadow: #16b978;
             margin-left:5%;
             margin-top:3%;
 
@@ -128,7 +132,7 @@
 
     .deco-title{
         font-size:5rem;
-        font-weight: 700px;
+        font-weight: 700;
         white-space: nowrap;
         line-height:0.5;
         color:transparent;
@@ -150,51 +154,54 @@
     .about-content-1{
        padding-left: 50px;
     }
-    .about .section-subtitle{
+    .about-content-1 .section-subtitle{
+        font-size:1.3rem;
         margin-block-end:10px;
     }
 
-    .tab-nav{
+    /* .tab-nav{
         display:flex;
         flex-wrap:wrap;
         gap:15px;
         margin-block:25px 36px;
-    }
+    } */
 
     .tab-btn{
         background-color:#caefc3;
         color:#212123;
         font-size:18px;
-        font-weight:500px;
+        font-weight:500;
         padding:10px 32px;
         cursor:pointer;
     }
 
-    .tab-btn.active{
-        background-color:#16b978;
-        color:#fff;
-    }
+    /* .section-text{
+        line-height:2;
+        font-size:1.1rem;
+        font-style:italic;
+        background-color:#caefc3;
+        color:#16b978;
+    } */
 
-    .section-text{line-height:2;}
-
-    .tab-list{margin-block:25px 50px;}
+    .tab-list{
+        background-color:#caefc3;
+        margin-block:25px 50px;}
 
     .tab-item{
-        display:flex;
         align-items:center;
         gap:10px;
         padding-block:5px;
-    }
-
-    .tab-item{
-        font-size:2rem;
+        font-size:1.2rem;
         color:#16b978;
     }
+    .tab-item ul{
+        margin-left:20px;
+    }
 
-    .tab-text{
+    /* .tab-text{
         font-size:8px;
         font-weight: 500px;
-    }
+    } */
  </style>
     </head>
 
@@ -202,7 +209,7 @@
         <section class="header"> 
             <nav> 
                 <div class="logo">
-                 <a href="index.html" class="logo"><img src="images/1logo.JPG"></a>
+                 <a href="index.html" class="logo"><img src="images/1logo.JPG" alt="Foundation Logo"></a>
                 </div> 
             <div class="nav-links"> 
                 
@@ -297,6 +304,7 @@
                 </div>
             </div>
             </section>
+
         <!--about-container-->
         <section class="about-section-1" id="about">
             <div class="about-container">
@@ -305,13 +313,13 @@
 
                     <div class="banner-row">
                         <div class="banner-col">
-                            <img src="images/about_img.jpg" height="330" width="315" class="about-img-1">
-                            <img src="images/about_img.jpg" width="386" height="250" class="about-img-1">
+                            <img src="images/about_img.jpg" height="330" width="315" class="about-img-1" alt="about img1">
+                            <img src="images/about_img.jpg" width="386" height="250" class="about-img-1" alt="about img2">
                         </div>
 
                         <div class="banner-col">
-                            <img src="images/about_img.jpg" width="250" height="277" class="about-img-1">
-                            <img src="images/about_img.jpg" width="315" height="330" class="about-img-1">
+                            <img src="images/about_img.jpg" width="250" height="277" class="about-img-1" alt="about img3">
+                            <img src="images/about_img.jpg" width="315" height="330" class="about-img-1" alt="about img4">
                         </div>
                     </div>
                 </div>
@@ -319,155 +327,37 @@
                 <div class="about-content-1">
 
                     <p class="section-subtitle">
-
-                        <span>Why Choose Us</span>
+                        <span>Why Choose Us?</span>
                     </p>
 
-                    <h2>
+                    <h2 style="margin-bottom:10px;">
                         Raise your hand to save people from hunger
                     </h2>
+                       
+                    <div class="tab-content">
 
-                    <ul class="tab-nav" type="none">
-
-                        <li>
-                            <button class="tab-btn" onclick="about-js1()">Our Mission</button>
-                        </li>
-                        <li>
-                            <button class="tab-btn">Our Vision</button>
-                        </li>
-                        <li>
-                            <button class="tab-btn">Our Impact</button>
-                        </li>
-                    </ul>
-                    
-                    <div class="tab-content" id="tab-content-1">
-
-                        <p class="section-text">dujfvjkvm</p>
+                        <button class="tab-btn">Our Vision & Mission </button>
                         <ul class="tab-list">
                             
-                            <li class="tab-item">
+                            <li class="tab-item">Empowering individuals
                                 <ul>
-                                    <li> 1</li>
+                                    <li>By providing emergency Food Assisstance </li>
+                                    <li>By promoting Food security education</li>
                                 </ul>
-                                <p class="tab-text">duyjfjj</p>
                             </li>
-                            <li class="tab-item">
+                            <li class="tab-item">Connecting Individuals with fresh local produce
                                 <ul>
-                                    <li> </li>
+                                    <li>By building Partnership with Super Markets </li>
+                                    <li>By building Partnership with Farms</li>
                                 </ul>
-                                <p class="tab-text">duyjfjj</p>
                             </li>
-                            <li class="tab-item">
-                                <ul>
-                                    <li> </li>
-                                </ul>
-                                <p class="tab-text">duyjfjj</p>
-                            </li> 
+                            <li class="tab-item">Equip Families with tools to achieve long-term food security
+                            </li>
                         </ul>
                     </div>
-
-                    <!-- <div class="tab-content" id="tab-content-2">
-
-                        <p class="section-text">dujfvjkvm</p>
-                        <ul class="tab-list">
-                            
-                            <li class="tab-item">
-                                <ul>
-                                    <li>2</li>
-                                </ul>
-                                <p class="tab-text">duyjfjj</p>
-                            </li>
-                            <li class="tab-item">
-                                <ul>
-                                    <li> </li>
-                                </ul>
-                                <p class="tab-text">duyjfjj</p>
-                            </li>
-                            <li class="tab-item">
-                                <ul>
-                                    <li> </li>
-                                </ul>
-                                <p class="tab-text">duyjfjj</p>
-                            </li> 
-                        </ul>
-                    </div> -->
-<!-- 
-                    <div class="tab-content" id="tab-content-3">
-
-                        <p class="section-text">dujfvjkvm</p>
-                        <ul class="tab-list">
-                            
-                            <li class="tab-item">
-                                <ul>
-                                    <li> 3 </li>
-                                </ul>
-                                <p class="tab-text">duyjfjj</p>
-                            </li>
-                            <li class="tab-item">
-                                <ul>
-                                    <li> </li>
-                                </ul>
-                                <p class="tab-text">duyjfjj</p>
-                            </li>
-                            <li class="tab-item">
-                                <ul>
-                                    <li> </li>
-                                </ul>
-                                <p class="tab-text">duyjfjj</p>
-                            </li> 
-                        </ul>
-                    </div> -->
-
                 </div>
             </div>
         </section>
-
-        <script>
-            const faqs=document.querySelectorAll(".faq")
-
-            faqs.forEach((faq)=>{
-                faq.addEventListener("click",()=>{
-                    if(faq.classList.contains("active")){
-                        faq.classList.remove("active")
-                    }else{
-                        faq.classList.add("active")
-                    }
-                })
-            })
-        </script>
-
-        <!-- <script>
-        
-        function about-js1(){
-        var x = document.getElementById("tab-content-1");
-        var y = document.getElementById("tab-content-2");
-        var z = document.getElementById("tab-content-3");
-
-        x.style.display="block";
-        y.style.display="none";
-        z.style.display="none";
-        }        
-
-        function about-js2(){
-        var x = document.getElementById("tab-content-1");
-        var y = document.getElementById("tab-content-2");
-        var z = document.getElementById("tab-content-3");
-
-        x.style.display="none";
-        y.style.display="block";
-        z.style.display="none";
-        }     
-
-        function about-js3(){
-        var x = document.getElementById("tab-content-1");
-        var y = document.getElementById("tab-content-2");
-        var z = document.getElementById("tab-content-3");
-
-        x.style.display="none";
-        y.style.display="none";
-        z.style.display="block";
-        }     
-        </script> -->
 
         <footer>
             <table class="content-table">
@@ -489,7 +379,7 @@
                 </tr>
             
                 <tr>
-                    <td style="width:23vw;"><a href="our_campaigns.html"><i class='bx bx-chevron-right' '>Our Campaigns</i></a>  </td>
+                    <td style="width:23vw;"><a href="our_campaigns.html"><i class='bx bx-chevron-right'>Our Campaigns</i></a>  </td>
                     <td><a href="help.html"><i class='bx bx-chevron-right' >Need Help? </i></a></td>
                     <td style="width:30vw;"><a>contact@doctorsfoundation.co.uk </a></td>
                     <td><a href="https://www.linkedin.com"><i class='bx bxl-linkedin-square'  >LinkedIn </i></a></td>

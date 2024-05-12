@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
         
         <title>Contact Us- Doctor's Foundation </title>
@@ -7,7 +8,9 @@
 
         <link rel="stylesheet" href="style.css" type="text/css">
 
-        
+        <!--charcater encoding-->
+        <meta charset="utf-8">
+
         <!---link to boxicon-->
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
@@ -35,8 +38,17 @@
             margin:2rem;
         }
 
+        .contact-img{
+            background-image: url(images/contact-img.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            width:400px;
+            height:500px;
+            box-shadow: 0 8px 32px rgba(0,0,0, .37);
+        }
         .contact-info{
-            padding-top:5%;
+            backdrop-filter:blur(3px);
+            padding: 5% 3%;
             flex:1 1 20rem;
         }
 
@@ -60,6 +72,8 @@
 
         
         .address{
+            box-shadow: 0 8px 32px rgba(0,0,0, .37);
+            background-color: #caefc3;
             display:flex;
             flex-direction:column;
         }
@@ -80,6 +94,11 @@
             margin-top:2rem;
         }
 
+        .social-content{
+            box-shadow: 0 8px 32px rgba(0,0,0, .37);
+            background-color: #caefc3;
+
+        }
         .social p{
             margin:0.5rem 0 1rem; 
             font-size:18px;
@@ -195,7 +214,7 @@
         <section class="header"> 
             <nav> 
                 <div class="logo">
-                 <a href="index.html" class="logo"><img src="images/1logo.JPG"></a>
+                 <a href="index.html" class="logo"><img src="images/1logo.JPG" alt="Foundation Logo"></a>
                 </div> 
             <div class="nav-links"> 
                 
@@ -240,6 +259,7 @@
          
             <div class="heading"><h1>Contact Us</h1></div>
          <div class="contact-container">
+            <div class="contact-img">
             <div class="contact-info">
                 <h2> Our Address</h2>
 
@@ -253,6 +273,7 @@
                 <div class="social"> 
 
                     <h2> Keep In Touch </h2>
+                    <div class="social-content">
                     <p>Join in the conversation at</p>
 
                     <!---boxicon-->
@@ -260,8 +281,9 @@
                     <a href=""><i class='bx bxl-facebook'> </i></a>
                     <a href=""><i class='bx bxl-instagram'> </i></a>
                     <a href=""><i class='bx bxl-youtube'> </i></a>
+                    </div>
                 </div>
-            </div>
+            </div></div>
 
             <script>
                 function submitForm(){
@@ -270,7 +292,7 @@
             </script>
 
             <div class="contact-form">
-                <form>
+                <form onsubmit="return submitForm()">
                     <div class="heading"> <h2>General Enquiries </h2> </div>
                 <select name="Subject for email" value="Select one subject for email">
                     <option> Food Donation Enquiry</option>
@@ -288,7 +310,7 @@
                 <input type="email" placeholder="Email Address" required> 
 
                 <textarea name="message" placeholder="Type your message here" maxlength="200" minlength="5" required></textarea>
-                <input type="submit" value="Submit" class="about-btn" onsubmit="submitForm()">
+                <input type="submit" value="Submit" class="about-btn">
             </form>
              </div>
             </div>
@@ -375,7 +397,7 @@
             </tr>
         
             <tr>
-                <td style="width:23vw;"><a href="our_campaigns.html"><i class='bx bx-chevron-right' '>Our Campaigns</i></a>  </td>
+                <td style="width:23vw;"><a href="our_campaigns.html"><i class='bx bx-chevron-right'>Our Campaigns</i></a>  </td>
                 <td><a href="help.html"><i class='bx bx-chevron-right' >Need Help? </i></a></td>
                 <td style="width:30vw;"><a>contact@doctorsfoundation.co.uk </a></td>
                 <td><a href="https://www.linkedin.com"><i class='bx bxl-linkedin-square'  >LinkedIn </i></a></td>
@@ -402,5 +424,4 @@
         
         </body> 
         </html> 
-    </body>
-</html>
+   
